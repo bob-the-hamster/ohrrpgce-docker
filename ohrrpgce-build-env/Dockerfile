@@ -5,7 +5,7 @@ FROM bobthehamster/freebasic
 
 # Install the packages needed to compile the ohrrpgce.
 # Also include subversion for fetching the source.
-# libc6-i386 is needed for when we install euphoria later.
+# g++-multilib is needed for when we install euphoria later.
 # We don't bother with timidity or freepats because those
 # are really run-time requirements, not build-time.
 
@@ -20,9 +20,8 @@ RUN apt-get update \
       libncurses5-dev \
       scons \
       g++ \
+      g++-multilib \
       make \
-      libc6-i386 \
-      libc6-dev-i386 \
     && rm -rf /var/lib/apt/lists/*
 
 # Install the euphoria compiler. In spite of the deb name

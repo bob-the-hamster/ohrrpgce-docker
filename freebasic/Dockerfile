@@ -1,5 +1,5 @@
 # bobthehamster/freebasic
-FROM ubuntu:trusty
+FROM debian:jessie-slim
 
 ENV FBC_VERSION 1.05.0
 

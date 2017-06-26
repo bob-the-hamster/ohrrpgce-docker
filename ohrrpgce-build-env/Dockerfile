@@ -1,5 +1,5 @@
 # bobthehamster/ohrrpgce-build-env
-# Begin with the freebasic image, (which is in turn based on ubuntu:trusty)
+# Begin with the freebasic image, (which is in turn based on debian:jessie-slim)
 
 FROM bobthehamster/freebasic
 
@@ -20,7 +20,9 @@ RUN apt-get update \
       libncurses5-dev \
       scons \
       g++ \
+      make \
       libc6-i386 \
+      libc6-dev-i386 \
     && rm -rf /var/lib/apt/lists/*
 
 # Install the euphoria compiler. In spite of the deb name

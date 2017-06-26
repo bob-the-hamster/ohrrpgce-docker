@@ -16,5 +16,8 @@ else
 fi
 
 cd wip
+# Build ohrrpgce-game and ohrrpgce-custom
 scons
+# build the hamsterspeak compiler
+scons hspeak
 

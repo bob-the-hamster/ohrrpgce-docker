@@ -1,3 +1,8 @@
+Please note that any tarballs or .deb files included in this repository
+have their own licenses. The BSD license below only applies to this
+collection of Dockerfiles and supporting shell scripts.
+-----------------------------------------------------------------------------
+
 BSD 3-Clause License
 
 Copyright (c) 2017, bob-the-hamster

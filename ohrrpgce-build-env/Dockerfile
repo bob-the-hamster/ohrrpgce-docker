@@ -25,7 +25,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 # Install the euphoria compiler. In spite of the deb name
-# this is actually a 32 bit binary (which is why we need libc6-i386)
+# this is actually a 32 bit binary (which is why we need g++-multilib)
 
 COPY euphoria_4.0.5_amd64.deb /euphoria-install/
 RUN dpkg -i /euphoria-install/euphoria_4.0.5_amd64.deb
@@ -33,3 +33,5 @@ RUN rm -rf /euphoria-install
 
 # Copy over the script for compiling the latest nightly
 COPY compile_ohrrpgce_nightly_inside_docker.sh /ohrrpgce/
+
+WORKDIR /ohrrpgce

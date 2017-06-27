@@ -30,3 +30,5 @@ RUN rm -rf /euphoria-install
 
 # Copy over the script for compiling the latest nightly
 COPY compile_ohrrpgce_nightly_inside_docker.sh /ohrrpgce/
+
+WORKDIR /ohrrpgce

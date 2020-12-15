@@ -30,8 +30,3 @@ RUN apt-get update \
 COPY euphoria_4.0.5_amd64.deb /euphoria-install/
 RUN dpkg -i /euphoria-install/euphoria_4.0.5_amd64.deb
 RUN rm -rf /euphoria-install
-
-# Copy over the script for compiling the latest nightly
-COPY compile_ohrrpgce_nightly_inside_docker.sh /ohrrpgce/
-
-WORKDIR /ohrrpgce

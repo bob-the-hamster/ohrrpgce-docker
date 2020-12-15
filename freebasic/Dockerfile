@@ -1,5 +1,5 @@
 # bobthehamster/freebasic
-FROM debian:jessie-slim
+FROM debian:stretch-slim
 
 ENV FBC_VERSION 1.05.0
 

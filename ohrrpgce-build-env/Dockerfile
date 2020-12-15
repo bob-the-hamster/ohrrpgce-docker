@@ -16,6 +16,9 @@ RUN apt-get update \
       libxpm-dev \
       libxrandr-dev \
       libxrender-dev \
+      libsdl2-dev \
+      libsdl2-mixer-dev \
+      libsdl1.2-dev \
       libsdl-mixer1.2-dev \
       libncurses5-dev \
       scons \
